@@ -1,0 +1,350 @@
+  .top-bar-right button {
+      font-size: 9px;
+  }
+
+  .top-bar-right a {
+      display: none;
+  }
+
+  .header-container {
+      position: relative;
+      width: 94%;
+      min-height: 82px;
+      gap: 10px;
+  }
+
+  .logo-area {
+      min-width: 0;
+      flex: 1;
+      gap: 9px;
+  }
+
+  .logo-circle,
+  .logo-circle img {
+      width: 62px;
+      height: 62px;
+  }
+
+  .logo-circle {
+      flex-basis: 62px;
+  }
+
+  .college-info h1 {
+      font-size: clamp(14px, 2.5vw, 17px);
+      letter-spacing: -.3px;
+  }
+
+  .college-info p,
+  .college-info small {
+      display: none;
+  }
+
+  .search-btn {
+      display: none;
+  }
+
+  .menu-btn {
+      display: block;
+      flex: 0 0 42px;
+  }
+
+  header nav {
+      position: absolute;
+      top: 100%;
+      left: -3.2%;
+      right: -3.2%;
+      z-index: 1001;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding: 8px 5%;
+      background: #fff;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+  }
+
+  header nav.open {
+      display: flex;
+  }
+
+  header nav a {
+      padding: 13px 5px;
+      border-bottom: 1px solid #edf0f5;
+      font-size: 14px;
+  }
+
+  header nav a.active::after {
+      display: none;
+  }
+
+  .hero {
+      min-height: auto;
+      background-image:
+          linear-gradient(180deg, rgba(245, 249, 255, .95) 0%, rgba(245, 249, 255, .88) 48%, rgba(245, 249, 255, .50) 100%),
+          url("collage.jpeg");
+      background-size: 100% 100%, cover;
+      background-position: center, center;
+  }
+
+  .hero-container {
+      width: 92%;
+      min-height: auto;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 25px;
+      padding: 42px 0 32px;
+  }
+
+  .hero-content {
+      padding-left: 0;
+  }
+
+  .hero-content h2 {
+      font-size: clamp(34px, 7vw, 44px);
+      letter-spacing: -1.5px;
+  }
+
+  .hero-content .description {
+      font-size: 14px;
+  }
+
+  .buttons {
+      align-items: stretch;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+      min-height: 48px;
+  }
+
+  .announcement {
+      max-width: 520px;
+      margin: auto;
+  }
+
+  .quick-services {
+      width: 100%;
+      margin-top: 0;
+      border-radius: 0;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service {
+      border-right: 1px solid #edf0f5;
+      border-bottom: 1px solid #edf0f5;
+  }
+
+  .service:nth-child(2n) {
+      border-right: 0;
+  }
+
+  .service:nth-child(4) {
+      border-right: 0;
+  }
+
+  .service:nth-child(7),
+  .service:nth-child(8) {
+      border-bottom: 0;
+  }
+
+  .statistics {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 20px 4%;
+  }
+
+  .statistics div {
+      border-right: 0;
+  }
+
+  .statistics div:last-child {
+      grid-column: 1 / -1;
+  }
+
+  .about {
+      width: 90%;
+      padding: 55px 0;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+  }
+
+  .about-image {
+      height: 300px;
+  }
+
+  .course-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+  }
+
+  .course-card {
+      padding: 20px;
+  }
+
+  .footer-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+  }
+
+  .footer-container>div:first-child {
+      grid-column: 1 / -1;
+  }
+  }
+
+  /* Small phones */
+  @media (max-width: 520px) {
+      .top-bar {
+          gap: 6px;
+      }
+
+      .top-bar-left {
+          min-width: 0;
+      }
+
+      .top-bar-left span:first-child {
+          white-space: nowrap;
+      }
+
+      .top-bar-right {
+          gap: 5px;
+      }
+
+      .top-bar-right button {
+          font-size: 8px;
+      }
+
+      .header-container {
+          min-height: 74px;
+      }
+
+      .logo-circle,
+      .logo-circle img {
+          width: 52px;
+          height: 52px;
+      }
+
+      .logo-circle {
+          flex-basis: 52px;
+      }
+
+      .college-info h1 {
+          font-size: 13px;
+      }
+
+      .menu-btn {
+          width: 38px;
+          height: 38px;
+          flex-basis: 38px;
+      }
+
+      .hero-container {
+          padding: 34px 0 28px;
+      }
+
+      .hero-content h2 {
+          font-size: 33px;
+      }
+
+      .hero-content .welcome {
+          font-size: 10px;
+          letter-spacing: 3px;
+      }
+
+      .hero-content .motto {
+          font-size: 13px;
+      }
+
+      .motto span {
+          margin: 0 3px;
+      }
+
+      .buttons {
+          flex-direction: column;
+      }
+
+      .primary-btn,
+      .secondary-btn {
+          width: 100%;
+          font-size: 14px;
+      }
+
+      .announcement {
+          padding: 17px;
+          border-radius: 17px;
+      }
+
+      .announcement .notice {
+          grid-template-columns: 68px minmax(0, 1fr);
+          gap: 8px;
+      }
+
+      .service {
+          min-height: 98px;
+      }
+
+      .service b {
+          font-size: 10px;
+      }
+
+      .about-image {
+          height: 245px;
+      }
+
+      .points {
+          grid-template-columns: minmax(0, 1fr);
+      }
+
+      .course-container {
+          grid-template-columns: minmax(0, 1fr);
+      }
+
+      .course-card {
+          padding: 22px;
+      }
+
+      .academics {
+          padding: 55px 5%;
+      }
+
+      .footer-container {
+          grid-template-columns: minmax(0, 1fr);
+      }
+
+      .footer-container>div:first-child {
+          grid-column: auto;
+      }
+
+      .scroll-top {
+          right: 14px;
+          bottom: 14px;
+          width: 42px;
+          height: 42px;
+      }
+  }
+
+  /* Respect reduced-motion accessibility preferences */
+  @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+          scroll-behavior: auto !important;
+          animation-duration: .01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: .01ms !important;
+      }
+  }
+
+
+  
+.department-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #4338ca;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.department-link:hover {
+    text-decoration: underline;
+}

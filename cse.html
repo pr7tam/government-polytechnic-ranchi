@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080f25">
+
+    <title>Computer Science & Engineering | Government Polytechnic Ranchi</title>
+
+    <meta name="description"
+        content="Explore the Computer Science and Engineering department at Government Polytechnic Ranchi. Discover programming, networking, databases and software development.">
+
+    <style>
+        /* ===================================
+   PREMIUM CSE WEBSITE - EDITION 2.0
+=================================== */
+
+        :root {
+            --navy: #080f25;
+            --navy-light: #111e3b;
+            --blue: #5685ff;
+            --cyan: #51e1f2;
+            --purple: #9c78ff;
+            --text: #18243b;
+            --muted: #68758c;
+            --white: #ffffff;
+            --bg: #f5f7fc;
+            --border: #e5eaf4;
+            --radius: 22px;
+            --shadow: 0 18px 55px rgba(16, 28, 58, .09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1160px, 90%);
+            margin: auto;
+        }
+
+        /* TOP STRIP */
+
+        .top-strip {
+            background: #050a18;
+            color: #cbd8f5;
+            padding: 9px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            font-size: 11px;
+            letter-spacing: .7px;
+        }
+
+        .top-strip strong {
+            color: white;
+        }
+
+        /* COLLEGE HEADER */
+
+        .college-header {
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            width: min(1240px, 92%);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            padding: 17px 0;
+        }
+
+        .college-logo {
+            width: 76px;
+            height: 76px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .college-name h2 {
+            color: var(--navy);
+            font-size: clamp(18px, 2.2vw, 27px);
+            line-height: 1.35;
+            letter-spacing: -.5px;
+        }
+
+        .college-name p {
+            margin-top: 5px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* NAVIGATION */
+
+        .navbar {
+            background: rgba(8, 15, 37, .97);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(8, 15, 37, .12);
+            backdrop-filter: blur(15px);
+        }
+
+        .nav-inner {
+            width: min(1160px, 90%);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, .07);
+            color: white;
+            width: 43px;
+            height: 40px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 31px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 16px 0;
+            color: #dce5fa;
+            font-size: 13px;
+            font-weight: 600;
+            transition: color .25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--cyan);
+        }
+
+        .nav-badge {
+            padding: 7px 13px;
+            border: 1px solid rgba(86, 133, 255, .5);
+            border-radius: 9px;
+            color: #bcd0ff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        /* HERO */
+
+        .hero {
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            color: white;
+            background:
+                radial-gradient(ellipse at 85% 20%, rgba(91, 83, 255, .28), transparent 38%),
+                radial-gradient(ellipse at 15% 90%, rgba(38, 190, 231, .15), transparent 40%),
+                linear-gradient(130deg, #080f25, #101d3b 62%, #17234b);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: .17;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, .10) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, .10) 1px, transparent 1px);
+            background-size: 42px 42px;
+            mask-image: linear-gradient(to right, black, transparent);
+        }
+
+        .hero-inner {
+            width: min(1160px, 90%);
+            margin: auto;
+            min-height: 440px;
+            padding: 80px 0 76px;
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: #b9ccff;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 24px;
+            height: 2px;
+            background: var(--cyan);
+        }
+
+        .hero h1 {
+            margin: 22px 0 18px;
+            max-width: 700px;
+            color: white;
+            font-size: clamp(39px, 5.5vw, 69px);
+            line-height: 1.07;
+            letter-spacing: -2.5px;
+        }
+
+        .hero h1 span {
+            display: block;
+            background: linear-gradient(90deg, #78a1ff, #70e9f5, #b9a1ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: #c3cee4;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 29px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            min-height: 47px;
+            padding: 12px 19px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 800;
+            transition: transform .25s, box-shadow .25s, background .25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(110deg, #5685ff, #7668f5);
+            color: white;
+            box-shadow: 0 10px 25px rgba(86, 133, 255, .25);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 14px 30px rgba(86, 133, 255, .35);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, .22);
+            color: white;
+            background: rgba(255, 255, 255, .04);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        /* HERO VISUAL */
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tech-orb {
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: min(285px, 100%);
+            aspect-ratio: 1;
+            border: 1px solid rgba(140, 171, 255, .28);
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(86, 133, 255, .20), rgba(255, 255, 255, .025) 67%);
+            box-shadow: inset 0 0 45px rgba(86, 133, 255, .1),
+                0 0 70px rgba(86, 133, 255, .08);
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .tech-orb::before,
+        .tech-orb::after {
+            content: "";
+            position: absolute;
+            border: 1px solid rgba(112, 233, 245, .28);
+            border-radius: 50%;
+        }
+
+        .tech-orb::before {
+            inset: 19px;
+        }
+
+        .tech-orb::after {
+            inset: -17px;
+            border-color: rgba(156, 120, 255, .2);
+        }
+
+        .orb-content {
+            text-align: center;
+        }
+
+        .orb-icon {
+            font-size: 81px;
+            line-height: 1.25;
+            filter: drop-shadow(0 0 22px rgba(112, 233, 245, .25));
+        }
+
+        .orb-content h3 {
+            margin-top: 8px;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .orb-content p {
+            color: #b9c8e7;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .orb-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 20px var(--cyan);
+        }
+
+        .dot-one {
+            top: 34px;
+            right: 43px;
+        }
+
+        .dot-two {
+            bottom: 38px;
+            left: 22px;
+            background: #a48cff;
+            box-shadow: 0 0 20px #a48cff;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-9px);
+            }
+        }
+
+        /* HIGHLIGHTS */
+
+        .highlights {
+            position: relative;
+            z-index: 2;
+            width: min(1080px, 90%);
+            margin: -28px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 19px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .highlight {
+            padding: 23px;
+            text-align: center;
+        }
+
+        .highlight+.highlight {
+            border-left: 1px solid var(--border);
+        }
+
+        .highlight strong {
+            display: block;
+            color: var(--navy);
+            font-size: 15px;
+        }
+
+        .highlight span {
+            display: block;
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        /* MAIN SECTIONS */
+
+        .section {
+            padding-top: 78px;
+        }
+
+        .section-heading {
+            margin-bottom: 27px;
+        }
+
+        .section-heading .label {
+            color: #596ff0;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            margin-top: 8px;
+            color: var(--navy);
+            font-size: clamp(28px, 3.5vw, 39px);
+            line-height: 1.25;
+            letter-spacing: -1px;
+        }
+
+        .section-heading p {
+            max-width: 680px;
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .about-card {
+            padding: 32px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: white;
+            box-shadow: 0 10px 35px rgba(16, 28, 58, .035);
+        }
+
+        .about-card h3 {
+            color: var(--navy);
+            font-size: 21px;
+            margin-bottom: 14px;
+        }
+
+        .about-card p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .about-card p+p {
+            margin-top: 12px;
+        }
+
+        .about-side {
+            position: relative;
+            overflow: hidden;
+            padding: 30px;
+            border-radius: var(--radius);
+            color: white;
+            background:
+                radial-gradient(circle at 100% 0%, rgba(86, 133, 255, .32), transparent 42%),
+                linear-gradient(140deg, #101b39, #182b52);
+        }
+
+        .about-side .code-symbol {
+            color: #8ab4ff;
+            font-family: Consolas, monospace;
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        .about-side h3 {
+            margin: 12px 0;
+            color: white;
+            font-size: 22px;
+        }
+
+        .about-side p {
+            color: #c7d4ed;
+            font-size: 13px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 22px;
+        }
+
+        .tag {
+            padding: 7px 10px;
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 8px;
+            color: #dfe8ff;
+            background: rgba(255, 255, 255, .055);
+            font-size: 11px;
+        }
+
+        /* LEARNING CARDS */
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 17px;
+        }
+
+        .learning-card {
+            position: relative;
+            overflow: hidden;
+            padding: 25px;
+            border: 1px solid var(--border);
+            border-radius: 19px;
+            background: white;
+            transition: transform .25s, box-shadow .25s, border-color .25s;
+        }
+
+        .learning-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--blue), var(--cyan));
+            transition: width .3s;
+        }
+
+        .learning-card:hover {
+            transform: translateY(-6px);
+            border-color: #cdd9ff;
+            box-shadow: 0 18px 38px rgba(16, 28, 58, .08);
+        }
+
+        .learning-card:hover::after {
+            width: 100%;
+        }
+
+        .card-icon {
+            display: grid;
+            place-items: center;
+            width: 49px;
+            height: 49px;
+            margin-bottom: 18px;
+            border-radius: 14px;
+            color: #536df1;
+            background: #eef2ff;
+            font-size: 23px;
+        }
+
+        .learning-card:nth-child(2) .card-icon {
+            color: #008f9f;
+            background: #e4fbfd;
+        }
+
+        .learning-card:nth-child(3) .card-icon {
+            color: #8755db;
+            background: #f1eaff;
+        }
+
+        .learning-card:nth-child(4) .card-icon {
+            color: #c07820;
+            background: #fff3df;
+        }
+
+        .learning-card:nth-child(5) .card-icon {
+            color: #20875d;
+            background: #e4f9ee;
+        }
+
+        .learning-card:nth-child(6) .card-icon {
+            color: #d04c73;
+            background: #ffedf2;
+        }
+
+        .learning-card h3 {
+            color: var(--navy);
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .learning-card p {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        /* LEARNING JOURNEY */
+
+        .journey {
+            margin-top: 76px;
+            padding: 52px;
+            border-radius: 26px;
+            color: white;
+            background:
+                radial-gradient(ellipse at 100% 0%, rgba(104, 98, 255, .24), transparent 38%),
+                linear-gradient(125deg, #080f25, #122247);
+        }
+
+        .journey .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .journey .section-heading h2 {
+            color: white;
+        }
+
+        .journey .section-heading p {
+            color: #bac8e2;
+        }
+
+        .journey .label {
+            color: #91aaff;
+        }
+
+        .journey-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .journey-card {
+            padding: 22px;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, .045);
+            transition: background .25s, transform .25s;
+        }
+
+        .journey-card:hover {
+            background: rgba(255, 255, 255, .09);
+            transform: translateY(-4px);
+        }
+
+        .journey-card span {
+            color: #91aaff;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .journey-card h3 {
+            margin: 10px 0 8px;
+            color: white;
+            font-size: 17px;
+        }
+
+        .journey-card p {
+            color: #c2cde2;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* CAREER PATHWAYS */
+
+        .career-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .career-card {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: white;
+        }
+
+        .career-card h3 {
+            color: var(--navy);
+            font-size: 21px;
+            margin-bottom: 18px;
+        }
+
+        .career-list {
+            list-style: none;
+            display: grid;
+            gap: 13px;
+        }
+
+        .career-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            color: #596780;
+            font-size: 13px;
+        }
+
+        .career-list li::before {
+            content: "✓";
+            display: grid;
+            place-items: center;
+            flex: 0 0 22px;
+            height: 22px;
+            border-radius: 7px;
+            background: #e8efff;
+            color: #4d68ed;
+            font-weight: 900;
+        }
+
+        .career-note {
+            margin-top: 20px;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        /* CTA */
+
+        .cta {
+            margin-top: 75px;
+            padding: 38px;
+            border: 1px solid #dbe4ff;
+            border-radius: 22px;
+            background: linear-gradient(110deg, #eef2ff, #f8fbff);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .cta h2 {
+            color: var(--navy);
+            font-size: clamp(22px, 3vw, 29px);
+            line-height: 1.3;
+        }
+
+        .cta p {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .cta .btn {
+            flex-shrink: 0;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 80px;
+            padding: 45px 0 20px;
+            color: #c1cce2;
+            background: #060c1d;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr .8fr .8fr;
+            gap: 35px;
+            padding-bottom: 32px;
+        }
+
+        .footer-brand {
+            color: white;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .footer-about {
+            max-width: 370px;
+            margin-top: 12px;
+            color: #9eacc6;
+            font-size: 12px;
+            line-height: 1.9;
+        }
+
+        .footer-col h3 {
+            color: white;
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+
+        .footer-col a {
+            display: block;
+            width: fit-content;
+            margin-top: 9px;
+            color: #aebbd2;
+            font-size: 12px;
+            transition: color .2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--cyan);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding-top: 19px;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            color: #8f9cb5;
+            font-size: 11px;
+        }
+
+        /* BACK TO TOP */
+
+        .back-top {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            z-index: 900;
+            display: grid;
+            place-items: center;
+            width: 43px;
+            height: 43px;
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 13px;
+            color: white;
+            background: #18294c;
+            box-shadow: 0 8px 25px rgba(8, 15, 37, .2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: .25s;
+        }
+
+        .back-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-top:hover {
+            background: #365bcb;
+        }
+
+        /* ACCESSIBILITY */
+
+        :focus-visible {
+            outline: 3px solid var(--cyan);
+            outline-offset: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
+        /* TABLET */
+
+        @media (max-width: 900px) {
+            .hero-inner {
+                grid-template-columns: 1fr .55fr;
+                gap: 25px;
+            }
+
+            .tech-orb {
+                width: 220px;
+            }
+
+            .orb-icon {
+                font-size: 62px;
+            }
+
+            .learning-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .journey {
+                padding: 35px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid> :first-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+            .container {
+                width: 90%;
+            }
+
+            .top-strip {
+                padding: 8px 5%;
+                font-size: 9px;
+                letter-spacing: .2px;
+            }
+
+            .header-inner {
+                width: 90%;
+                padding: 13px 0;
+                gap: 12px;
+            }
+
+            .college-logo {
+                width: 54px;
+                height: 54px;
+            }
+
+            .college-name h2 {
+                font-size: 17px;
+            }
+
+            .college-name p {
+                font-size: 10px;
+            }
+
+            .nav-inner {
+                width: 90%;
+                min-height: 57px;
+                flex-wrap: wrap;
+            }
+
+            .nav-brand {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+                margin: 8px 0;
+            }
+
+            .nav-badge {
+                display: none;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding-bottom: 9px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links li {
+                border-top: 1px solid rgba(255, 255, 255, .1);
+            }
+
+            .nav-links a {
+                padding: 12px 5px;
+                font-size: 13px;
+            }
+
+            .hero-inner {
+                width: 90%;
+                min-height: auto;
+                padding: 57px 0 66px;
+                grid-template-columns: 1fr;
+                gap: 43px;
+            }
+
+            .hero h1 {
+                font-size: clamp(39px, 11vw, 54px);
+                letter-spacing: -1.7px;
+            }
+
+            .hero-description {
+                font-size: 13px;
+            }
+
+            .hero-visual {
+                padding: 0 0 10px;
+            }
+
+            .tech-orb {
+                width: 190px;
+            }
+
+            .orb-icon {
+                font-size: 53px;
+            }
+
+            .highlights {
+                width: 90%;
+                margin-top: -23px;
+            }
+
+            .highlight {
+                padding: 16px 7px;
+            }
+
+            .highlight strong {
+                font-size: 11px;
+            }
+
+            .highlight span {
+                font-size: 9px;
+            }
+
+            .section {
+                padding-top: 57px;
+            }
+
+            .section-heading h2 {
+                font-size: 29px;
+            }
+
+            .section-heading p {
+                font-size: 13px;
+            }
+
+            .about-grid,
+            .career-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-card,
+            .about-side {
+                padding: 24px;
+            }
+
+            .learning-grid {
+                grid-template-columns: 1fr;
+                gap: 13px;
+            }
+
+            .learning-card {
+                padding: 23px;
+            }
+
+            .journey {
+                margin-top: 57px;
+                padding: 27px 21px;
+                border-radius: 20px;
+            }
+
+            .journey-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .journey-card {
+                padding: 20px;
+            }
+
+            .career-card {
+                padding: 24px;
+            }
+
+            .cta {
+                margin-top: 55px;
+                padding: 26px 22px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 25px 15px;
+            }
+
+            .footer-grid> :first-child {
+                grid-column: 1 / -1;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                line-height: 1.8;
+            }
+
+            footer {
+                margin-top: 58px;
+            }
+
+            .back-top {
+                right: 14px;
+                bottom: 14px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+
+        /* ===== FINAL IMAGE LAYOUT FIX ===== */
+
+        /* Hero: image right, text left */
+        .hero-photo {
+            position: relative;
+            isolation: isolate;
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            padding: 65px max(5%, calc((100% - 1160px) / 2));
+            overflow: hidden;
+            background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1800&q=85");
+            background-position: center 45%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(90deg,
+                    rgba(5, 17, 37, .98) 0%,
+                    rgba(5, 17, 37, .91) 38%,
+                    rgba(5, 17, 37, .56) 65%,
+                    rgba(5, 17, 37, .12) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 620px;
+            color: white;
+        }
+
+        .hero-content>span {
+            color: #69b7ff;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .hero-content h1 {
+            margin: 16px 0;
+            color: white;
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-content p {
+            max-width: 490px;
+            color: #e0e9f5;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            color: white;
+            background: #1678ed;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        /* Laboratory: equal image and content columns */
+        .lab-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 42px;
+            padding: 60px max(5%, calc((100% - 1160px) / 2));
+            background: white;
+        }
+
+        .lab-image {
+            min-width: 0;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+
+        .lab-image img {
+            display: block;
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .lab-content {
+            min-width: 0;
+        }
+
+        .lab-content h2 {
+            margin: 12px 0;
+            color: #0b1b35;
+            font-size: clamp(27px, 3vw, 38px);
+            line-height: 1.2;
+        }
+
+        .lab-content p {
+            color: #657187;
+            font-size: 14px;
+            line-height: 1.85;
+        }
+
+        /* Projects: equal-sized image cards */
+        .project-section {
+            padding: 60px max(5%, calc((100% - 1160px) / 2));
+            background: #f3f6fb;
+        }
+
+        .project-section>h2 {
+            color: #0b1b35;
+            font-size: clamp(28px, 3vw, 38px);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .project-card {
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid #e2e8f2;
+            border-radius: 14px;
+            background: white;
+        }
+
+        .project-card img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .project-card h3 {
+            margin: 16px 16px 6px;
+            font-size: 16px;
+            color: #102243;
+        }
+
+        .project-card p {
+            margin: 0 16px 18px;
+            color: #657187;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 700px) {
+            .hero-photo {
+                min-height: 410px;
+                padding: 45px 6%;
+                background-position: 58% center;
+            }
+
+            .hero-overlay {
+                background: rgba(5, 17, 37, .79);
+            }
+
+            .hero-content h1 {
+                font-size: clamp(36px, 10vw, 48px);
+            }
+
+            .lab-section {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 38px 6%;
+            }
+
+            .lab-image img {
+                height: 240px;
+            }
+
+            .project-section {
+                padding: 40px 6%;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .project-card img {
+                height: 225px;
+            }
+        }
+
+
+
+        /* IMAGE HIGHLIGHTS — THREE EQUAL CARDS */
+        .highlights.image-highlights {
+            width: min(1080px, 90%);
+            margin: -28px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0;
+            overflow: hidden;
+            border: 1px solid #e5eaf4;
+            border-radius: 19px;
+            background: #fff;
+            box-shadow: 0 18px 45px rgba(16, 28, 58, .09);
+        }
+
+        .image-highlights .highlight-image {
+            min-width: 0;
+            padding: 0;
+            text-align: left;
+            overflow: hidden;
+            background: white;
+        }
+
+        .image-highlights .highlight-image+.highlight-image {
+            border-left: 1px solid #e5eaf4;
+        }
+
+        .image-highlights .highlight-image img {
+            display: block;
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .image-highlights .highlight-content {
+            padding: 17px 12px 19px;
+            text-align: center;
+        }
+
+        .image-highlights .highlight-content strong {
+            display: block;
+            color: #080f25;
+            font-size: 14px;
+        }
+
+        .image-highlights .highlight-content span {
+            display: block;
+            margin-top: 5px;
+            color: #68758c;
+            font-size: 11px;
+        }
+
+        @media (max-width: 650px) {
+            .highlights.image-highlights {
+                width: 90%;
+                margin-top: -20px;
+                grid-template-columns: 1fr;
+            }
+
+            .image-highlights .highlight-image {
+                display: grid;
+                grid-template-columns: 115px minmax(0, 1fr);
+                align-items: center;
+                min-height: 105px;
+            }
+
+            .image-highlights .highlight-image+.highlight-image {
+                border-left: 0;
+                border-top: 1px solid #e5eaf4;
+            }
+
+            .image-highlights .highlight-image img {
+                width: 115px;
+                height: 105px;
+            }
+
+            .image-highlights .highlight-content {
+                padding: 12px;
+                text-align: left;
+            }
+        }
+
+
+
+        /* ===== FIX PAGE BOUNDARIES & SPACING ===== */
+
+        /* Keep all main content inside a centered container */
+        .container {
+            width: calc(100% - 64px);
+            max-width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Prevent sections from touching screen edges */
+        .section {
+            width: 100%;
+            padding-top: 72px;
+        }
+
+        /* Better spacing around section headings */
+        .section-heading {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto 28px;
+        }
+
+        .section-heading h2 {
+            line-height: 1.3;
+            overflow-wrap: break-word;
+        }
+
+        .section-heading p {
+            max-width: 720px;
+            line-height: 1.8;
+        }
+
+        /* Balanced learning cards */
+        .learning-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .learning-card {
+            min-width: 0;
+            padding: 26px;
+            border-radius: 20px;
+        }
+
+        .learning-card h3 {
+            line-height: 1.4;
+            overflow-wrap: break-word;
+        }
+
+        .learning-card p {
+            line-height: 1.85;
+            overflow-wrap: break-word;
+        }
+
+        /* Ensure the main page doesn't overflow horizontally */
+        body {
+            overflow-x: clip;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .container {
+                width: calc(100% - 40px);
+            }
+
+            .learning-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: calc(100% - 32px);
+            }
+
+            .section {
+                padding-top: 48px;
+            }
+
+            .section-heading {
+                margin-bottom: 22px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .learning-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 15px;
+            }
+
+            .learning-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP STRIP -->
+    <div class="top-strip">
+        <span><strong>GOVERNMENT POLYTECHNIC RANCHI</strong></span>
+        <span>Technical Education · Jharkhand</span>
+    </div>
+
+    <!-- COLLEGE HEADER -->
+    <header class="college-header">
+        <div class="header-inner">
+            <img class="college-logo" src="images1.jpeg" alt="Government Polytechnic Ranchi logo">
+            <div class="college-name">
+                <h2>Government Polytechnic Ranchi</h2>
+                <p>Department of Technical Education, Jharkhand</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="nav-brand" href="index.html">GPR · CSE</a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navLinks">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About College</a></li>
+                <li><a href="index.html#academics">Academics</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <span class="nav-badge">CSE DEPARTMENT</span>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero-photo">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span>DEPARTMENT OF</span>
+                <h1>Computer Science<br>& Engineering</h1>
+                <p>
+                    Building technical excellence, innovation
+                    and problem-solving skills for a digital future.
+                </p>
+
+                <a href="#learning" class="hero-btn">
+                    Explore Department →
+                </a>
+            </div>
+        </section>
+
+        <section class="lab-section">
+            <div class="lab-image">
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students working with computer technology">
+            </div>
+
+            <div class="lab-content">
+                <span class="section-label">PRACTICAL LEARNING</span>
+                <h2>Hands-on Learning Environment</h2>
+                <p>
+                    Explore programming, databases, web development
+                    and computer networking through practical learning
+                    and project-based activities.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-section" id="projects">
+            <h2>Innovation in Action</h2>
+            <p>Explore project ideas related to Computer Science & Engineering.</p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80"
+                        alt="Programming code on a computer screen">
+                    <h3>Web Development</h3>
+                    <p>Websites, interfaces and interactive applications.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80"
+                        alt="Electronic circuit board for a technical project">
+                    <h3>Hardware Projects</h3>
+                    <p>Computer components and technology-based prototypes.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=700&q=80"
+                        alt="Software development and programming">
+                    <h3>Software Development</h3>
+                    <p>Build useful applications and solve real-world problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- HIGHLIGHTS -->
+
+        <!-- HIGHLIGHTS WITH CSE IMAGES -->
+        <section class="highlights image-highlights" aria-label="CSE department highlights">
+
+            <article class="highlight highlight-image">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=80"
+                    alt="Programming code on a computer screen">
+                <div class="highlight-content">
+                    <strong>Programming</strong>
+                    <span>Develop logical thinking</span>
+                </div>
+            </article>
+
+            <article class="highlight highlight-image">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80"
+                    alt="Students collaborating on a technology project">
+                <div class="highlight-content">
+                    <strong>Practical Learning</strong>
+                    <span>Learn through projects</span>
+                </div>
+            </article>
+
+            <article class="highlight highlight-image">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+                    alt="Computer hardware and electronic technology">
+                <div class="highlight-content">
+                    <strong>Future Technologies</strong>
+                    <span>Explore emerging fields</span>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- LEARNING AREAS -->
+        <section class="section" id="learning">
+            <div class="section-heading">
+                <span class="label">Build Your Foundation</span>
+                <h2>Key learning areas.</h2>
+                <p>
+                    Explore important computing fields and understand how each
+                    contributes to building practical technical knowledge.
+                </p>
+            </div>
+
+            <div class="learning-grid">
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">⌨</div>
+                    <h3>Programming</h3>
+                    <p>
+                        Learn programming fundamentals, variables, conditions,
+                        loops, functions, data structures and problem-solving
+                        through languages such as C and Python.
+                    </p>
+                </article>
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">⌘</div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Understand HTML, CSS and JavaScript to create responsive
+                        websites, interactive user interfaces and modern web
+                        experiences.
+                    </p>
+                </article>
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">▤</div>
+                    <h3>Database Systems</h3>
+                    <p>
+                        Explore data organisation, tables, SQL queries, database
+                        relationships and the fundamentals of managing information.
+                    </p>
+                </article>
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">⌁</div>
+                    <h3>Computer Networks</h3>
+                    <p>
+                        Study network types, topologies, communication models,
+                        networking devices, protocols and how computers exchange
+                        information.
+                    </p>
+                </article>
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">⚙</div>
+                    <h3>Hardware & Systems</h3>
+                    <p>
+                        Understand computer components, operating systems,
+                        maintenance, troubleshooting and the relationship between
+                        hardware and software.
+                    </p>
+                </article>
+
+                <article class="learning-card">
+                    <div class="card-icon" aria-hidden="true">✦</div>
+                    <h3>Emerging Technologies</h3>
+                    <p>
+                        Build introductory knowledge of artificial intelligence,
+                        data analytics, cloud computing and cybersecurity as
+                        your fundamentals improve.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- LEARNING JOURNEY -->
+        <section class="journey">
+            <div class="section-heading">
+                <span class="label">Your Learning Journey</span>
+                <h2>From fundamentals to real projects.</h2>
+                <p>
+                    A practical approach to improving your knowledge and building
+                    confidence as a CSE student.
+                </p>
+            </div>
+
+            <div class="journey-grid">
+
+                <article class="journey-card">
+                    <span>STEP 01</span>
+                    <h3>Learn the Basics</h3>
+                    <p>
+                        Strengthen programming fundamentals, computer concepts,
+                        logical reasoning and core technical subjects.
+                    </p>
+                </article>
+
+                <article class="journey-card">
+                    <span>STEP 02</span>
+                    <h3>Practise Consistently</h3>
+                    <p>
+                        Solve coding questions, practise SQL, use development tools
+                        and revise concepts through regular exercises.
+                    </p>
+                </article>
+
+                <article class="journey-card">
+                    <span>STEP 03</span>
+                    <h3>Build Projects</h3>
+                    <p>
+                        Apply your knowledge through websites, database projects,
+                        networking practicals and other suitable mini-projects.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CAREERS -->
+        <section class="section" id="careers">
+            <div class="section-heading">
+                <span class="label">Explore Opportunities</span>
+                <h2>Career pathways in CSE.</h2>
+                <p>
+                    Your career direction can grow with your skills, practical
+                    experience, interests and further education.
+                </p>
+            </div>
+
+            <div class="career-grid">
+
+                <article class="career-card">
+                    <h3>Technical Career Options</h3>
+
+                    <ul class="career-list">
+                        <li>Junior Software Developer</li>
+                        <li>Web Developer</li>
+                        <li>Python Developer — with relevant skills</li>
+                        <li>Database Support / SQL Trainee</li>
+                        <li>IT Support and Computer Maintenance</li>
+                        <li>Networking Support Trainee</li>
+                    </ul>
+                </article>
+
+                <article class="career-card">
+                    <h3>Skills Worth Developing</h3>
+
+                    <ul class="career-list">
+                        <li>Programming fundamentals and problem-solving</li>
+                        <li>HTML, CSS and JavaScript</li>
+                        <li>Python and SQL practice</li>
+                        <li>Git and GitHub basics</li>
+                        <li>Communication and teamwork</li>
+                        <li>Projects, internships and technical portfolios</li>
+                    </ul>
+                </article>
+
+            </div>
+
+            <p class="career-note">
+                Note: The learning areas and career options shown here are general
+                educational guidance, not a confirmed list of current college
+                facilities, official subjects, placements or job guarantees.
+                Check the current JUT syllabus and official college information
+                for verified details.
+            </p>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta">
+            <div>
+                <h2>Your next idea could become your next project.</h2>
+                <p>
+                    Keep learning, keep practising and turn your concepts into
+                    something useful.
+                </p>
+            </div>
+
+            <a href="index.html#departments" class="btn btn-primary">
+                Explore Departments <span>↗</span>
+            </a>
+        </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        Government Polytechnic Ranchi
+                    </div>
+
+                    <p class="footer-about">
+                        Computer Science and Engineering department page.
+                        Explore computing concepts, technical learning areas
+                        and opportunities for skill development.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About College</a>
+                    <a href="index.html#academics">Academics</a>
+                    <a href="index.html#departments">Departments</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Explore CSE</h3>
+                    <a href="#about-department">About CSE</a>
+                    <a href="#learning">Learning Areas</a>
+                    <a href="#careers">Career Pathways</a>
+                    <a href="#top" id="footerTop">Back to Top ↑</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    © <span id="currentYear">2026</span>
+                    Government Polytechnic Ranchi
+                </span>
+                <span>Computer Science & Engineering</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a class="back-top" id="backTop" href="#top" aria-label="Back to top">↑</a>
+
+    <script>
+        // MOBILE NAVIGATION
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("open");
+
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+        });
+
+        // CLOSE MENU AFTER CLICKING A LINK
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("open");
+                menuToggle.textContent = "☰";
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation menu");
+            });
+        });
+
+        // BACK TO TOP BUTTON
+        const backTop = document.getElementById("backTop");
+
+        function updateBackTop() {
+            backTop.classList.toggle("visible", window.scrollY > 350);
+        }
+
+        window.addEventListener("scroll", updateBackTop, { passive: true });
+        updateBackTop();
+
+        // CURRENT YEAR
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

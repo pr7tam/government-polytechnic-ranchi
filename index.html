@@ -1,0 +1,1377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101c35">
+
+<title>Government Polytechnic Ranchi | Technical Education</title>
+
+<meta name="description" content="Explore Government Polytechnic Ranchi, its engineering departments, academic programmes and technical learning opportunities.">
+
+<style>
+:root {
+    --navy: #101c35;
+    --navy2: #1b2d4d;
+    --accent: #d8a75c;
+    --soft: #f4ead9;
+    --text: #19263c;
+    --muted: #69768b;
+    --bg: #f6f8fc;
+    --border: #e4e9f1;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    overflow-x: clip;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: calc(100% - 64px);
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+/* TOP BAR */
+
+.top-strip {
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: #091222;
+    color: #dbe5f5;
+    font-size: 11px;
+    letter-spacing: .4px;
+}
+
+.top-strip strong {
+    color: white;
+}
+
+/* COLLEGE HEADER */
+
+.college-header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    width: 92%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.college-logo {
+    width: 74px;
+    height: 74px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.college-name h1 {
+    color: var(--navy);
+    font-size: clamp(19px, 2.5vw, 29px);
+    line-height: 1.3;
+}
+
+.college-name p {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    box-shadow: 0 6px 20px rgba(16,28,53,.13);
+}
+
+.nav-inner {
+    width: 90%;
+    max-width: 1180px;
+    min-height: 58px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-brand {
+    display: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 16px 0;
+    color: #e2e9f5;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color .2s;
+}
+
+.nav-links a:hover {
+    color: #f4c981;
+}
+
+.nav-cta {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 8px;
+    color: #18243a;
+    background: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 40px;
+    border: 1px solid #41516a;
+    border-radius: 9px;
+    background: var(--navy2);
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    background:
+        url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=85")
+        center 48% / cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,17,33,.95) 0%,
+            rgba(8,17,33,.83) 44%,
+            rgba(8,17,33,.42) 76%,
+            rgba(8,17,33,.20) 100%
+        );
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 85px 0 115px;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 7px 12px;
+    border: 1px solid rgba(244,201,129,.5);
+    border-radius: 30px;
+    color: #f4c981;
+    background: rgba(255,255,255,.06);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    max-width: 780px;
+    margin: 23px 0 17px;
+    color: white;
+    font-size: clamp(39px, 6vw, 70px);
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.hero h2 span {
+    display: block;
+    color: #f4c981;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: #e0e7f1;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 29px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 19px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: transform .2s, background .2s;
+}
+
+.btn-primary {
+    color: #1c2637;
+    background: #f4c981;
+}
+
+.btn-primary:hover {
+    background: #ffdaa0;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.45);
+    color: white;
+    background: rgba(255,255,255,.06);
+}
+
+.btn-outline:hover {
+    background: rgba(255,255,255,.14);
+}
+
+/* QUICK HIGHLIGHTS */
+
+.stats-wrap {
+    position: relative;
+    z-index: 2;
+    width: min(1080px, calc(100% - 64px));
+    margin: -42px auto 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 18px 42px rgba(16,28,53,.10);
+}
+
+.stat {
+    padding: 23px 16px;
+    text-align: center;
+}
+
+.stat + .stat {
+    border-left: 1px solid var(--border);
+}
+
+.stat strong {
+    display: block;
+    color: var(--navy);
+    font-size: 16px;
+}
+
+.stat span {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* SECTION HEADINGS */
+
+.section {
+    padding-top: 78px;
+}
+
+.section-heading {
+    max-width: 780px;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    color: #a16e28;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    color: var(--navy);
+    font-size: clamp(28px, 3.6vw, 40px);
+    line-height: 1.3;
+    letter-spacing: -.8px;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin-top: 11px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.about-image {
+    min-height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #e5eaf1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: white;
+}
+
+.about-content h3 {
+    margin-bottom: 14px;
+    color: var(--navy);
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.about-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.95;
+}
+
+.about-content p + p {
+    margin-top: 13px;
+}
+
+.about-link {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 21px;
+    color: #9a6725;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* ACADEMICS */
+
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 19px;
+}
+
+.academic-card {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    background: white;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.academic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(16,28,53,.07);
+}
+
+.academic-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 13px;
+    color: #956323;
+    background: var(--soft);
+    font-size: 23px;
+}
+
+.academic-card h3 {
+    margin-bottom: 9px;
+    color: var(--navy);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+.academic-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* DEPARTMENTS */
+
+.departments-section {
+    margin-top: 80px;
+    padding: 72px 0;
+    background: #edf1f7;
+}
+
+.departments-section .section {
+    padding-top: 0;
+}
+
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 21px;
+}
+
+.department-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e1e6ef;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 7px 20px rgba(16,28,53,.035);
+    transition: transform .25s, box-shadow .25s;
+}
+
+.department-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(16,28,53,.12);
+}
+
+.department-image {
+    position: relative;
+    height: 195px;
+    overflow: hidden;
+    background: #e1e7ef;
+}
+
+.department-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .45s;
+}
+
+.department-card:hover .department-image img {
+    transform: scale(1.05);
+}
+
+.department-tag {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    color: white;
+    background: rgba(16,28,53,.88);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .4px;
+}
+
+.department-content {
+    padding: 22px;
+}
+
+.department-content h3 {
+    min-height: 48px;
+    margin-bottom: 9px;
+    color: var(--navy);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.department-content p {
+    min-height: 73px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.department-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: #986522;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.department-link:hover {
+    color: var(--navy);
+}
+
+/* WHY CHOOSE US */
+
+.why-section {
+    margin-top: 78px;
+    padding: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    border-radius: 23px;
+    color: white;
+    background: linear-gradient(125deg, #101c35, #243958);
+}
+
+.why-content .section-label {
+    color: #f4c981;
+}
+
+.why-content h2 {
+    margin: 12px 0;
+    color: white;
+    font-size: clamp(27px, 3.5vw, 38px);
+    line-height: 1.3;
+}
+
+.why-content p {
+    color: #d8e1ee;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.why-list {
+    display: grid;
+    gap: 14px;
+    list-style: none;
+}
+
+.why-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+    background: rgba(255,255,255,.05);
+    color: #e4ebf5;
+    font-size: 13px;
+}
+
+.why-list li::before {
+    content: "✓";
+    color: #f4c981;
+    font-weight: 900;
+}
+
+/* CONTACT */
+
+.contact-box {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border: 1px solid #ecdfca;
+    border-radius: 20px;
+    background: #fff8ed;
+}
+
+.contact-box h2 {
+    color: var(--navy);
+    font-size: clamp(23px, 3vw, 31px);
+    line-height: 1.35;
+}
+
+.contact-box p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 78px;
+    padding: 43px 0 20px;
+    color: #c9d4e4;
+    background: #091222;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr .8fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.footer-about {
+    max-width: 380px;
+    margin-top: 10px;
+    color: #aebbd0;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.footer-col h3 {
+    margin-bottom: 13px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-col a {
+    display: block;
+    width: fit-content;
+    margin-top: 9px;
+    color: #c3cee0;
+    font-size: 12px;
+}
+
+.footer-col a:hover {
+    color: #f4c981;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    color: #9eacc1;
+    font-size: 11px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .academic-grid,
+    .departments-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-section {
+        padding: 30px;
+        gap: 23px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid > :first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .top-strip {
+        padding: 8px 4%;
+        font-size: 9px;
+    }
+
+    .header-inner {
+        width: 92%;
+        padding: 12px 0;
+        gap: 11px;
+    }
+
+    .college-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .college-name h1 {
+        font-size: 16px;
+    }
+
+    .college-name p {
+        font-size: 10px;
+    }
+
+    .nav-inner {
+        width: 90%;
+        min-height: 56px;
+        flex-wrap: wrap;
+    }
+
+    .nav-brand {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding-bottom: 8px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    .nav-links a {
+        padding: 12px 5px;
+    }
+
+    .hero {
+        min-height: 470px;
+        background-position: 58% center;
+    }
+
+    .hero-overlay {
+        background: rgba(8,17,33,.79);
+    }
+
+    .hero-inner {
+        width: 90%;
+        padding: 62px 0 85px;
+    }
+
+    .hero h2 {
+        font-size: clamp(38px, 10vw, 49px);
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .stats-wrap {
+        width: calc(100% - 32px);
+        margin-top: -28px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        padding: 15px;
+    }
+
+    .stat + .stat {
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .section {
+        padding-top: 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .about-grid,
+    .why-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image,
+    .about-image img {
+        min-height: 0;
+        height: 240px;
+    }
+
+    .about-content {
+        padding: 24px;
+    }
+
+    .academic-grid,
+    .departments-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .academic-card {
+        padding: 22px;
+    }
+
+    .departments-section {
+        margin-top: 52px;
+        padding: 48px 0;
+    }
+
+    .department-image {
+        height: 210px;
+    }
+
+    .department-content h3,
+    .department-content p {
+        min-height: 0;
+    }
+
+    .why-section {
+        margin-top: 50px;
+        padding: 25px 20px;
+        gap: 22px;
+    }
+
+    .contact-box {
+        padding: 25px 22px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 14px;
+    }
+
+    .footer-grid > :first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        line-height: 1.8;
+    }
+
+    footer {
+        margin-top: 55px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<!-- TOP BAR -->
+<div class="top-strip">
+    <span><strong>GOVERNMENT POLYTECHNIC RANCHI</strong></span>
+    <span>Technical Education · Jharkhand</span>
+</div>
+
+<!-- COLLEGE HEADER -->
+<header class="college-header">
+    <div class="header-inner">
+        <img class="college-logo"
+             src="images1.jpeg"
+             alt="Government Polytechnic Ranchi logo">
+
+        <div class="college-name">
+            <h1>Government Polytechnic Ranchi</h1>
+            <p>Department of Technical Education, Jharkhand</p>
+        </div>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+
+        <a class="nav-brand" href="#top">GPR · HOME</a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                aria-label="Open navigation menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About College</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-cta" href="#departments">Explore Departments →</a>
+    </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner">
+        <span class="hero-label">Learn · Build · Innovate</span>
+
+        <h2>
+            Shaping Skills.
+            <span>Building Futures.</span>
+        </h2>
+
+        <p class="hero-description">
+            Welcome to Government Polytechnic Ranchi. Explore engineering
+            disciplines, strengthen your technical foundation and discover
+            learning opportunities that help prepare you for the future.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#departments" class="btn btn-primary">
+                Explore Departments →
+            </a>
+
+            <a href="#about" class="btn btn-outline">
+                Discover Our College
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="stats-wrap" aria-label="College highlights">
+    <div class="stats">
+        <div class="stat">
+            <strong>Technical Education</strong>
+            <span>Engineering-focused learning</span>
+        </div>
+
+        <div class="stat">
+            <strong>Five Branch Pages</strong>
+            <span>Explore the available department sections</span>
+        </div>
+
+        <div class="stat">
+            <strong>Learn by Doing</strong>
+            <span>Build knowledge and practical skills</span>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="section-heading">
+        <span class="section-label">About the Institution</span>
+        <h2>A foundation for technical learning.</h2>
+        <p>
+            Explore the college website to learn about its engineering
+            branches, academic information and technical learning areas.
+        </p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-image">
+            <img
+                src="collage.jpeg"
+                alt="Educational campus building"
+                loading="lazy">
+        </div>
+
+        <article class="about-content">
+            <span class="section-label">Welcome to GPR</span>
+
+            <h3>Learn engineering. Develop skills. Explore possibilities.</h3>
+
+            <p>
+                Government Polytechnic Ranchi is presented here through
+                a student-friendly website designed to make department
+                information easier to explore.
+            </p>
+
+            <p>
+                Students can browse the branch pages to discover
+                engineering concepts, general learning areas, practical
+                topics and possible career pathways.
+            </p>
+
+            <p>
+                For official admission notices, regulations, current
+                syllabus details and verified college information,
+                consult the relevant college or JUT sources.
+            </p>
+
+            <a href="#departments" class="about-link">
+                Discover Our Departments →
+            </a>
+        </article>
+    </div>
+</section>
+
+<!-- ACADEMICS -->
+<section class="section" id="academics">
+    <div class="section-heading">
+        <span class="section-label">Academic Experience</span>
+        <h2>Learn concepts that connect with the real world.</h2>
+        <p>
+            Explore different areas of technical education and build
+            a foundation for further study and professional development.
+        </p>
+    </div>
+
+    <div class="academic-grid">
+
+        <article class="academic-card">
+            <div class="academic-icon" aria-hidden="true">▤</div>
+            <h3>Engineering Fundamentals</h3>
+            <p>
+                Develop an understanding of core engineering concepts,
+                technical terminology and problem-solving methods.
+            </p>
+        </article>
+
+        <article class="academic-card">
+            <div class="academic-icon" aria-hidden="true">⚙</div>
+            <h3>Practical Learning</h3>
+            <p>
+                Connect theoretical concepts with laboratory work,
+                technical exercises and supervised practical activities.
+            </p>
+        </article>
+
+        <article class="academic-card">
+            <div class="academic-icon" aria-hidden="true">⌘</div>
+            <h3>Technical Skills</h3>
+            <p>
+                Develop digital literacy, technical communication,
+                teamwork and a habit of continuous learning.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+</div>
+
+<!-- DEPARTMENTS -->
+<section class="departments-section" id="departments">
+    <div class="container">
+
+        <div class="section">
+            <div class="section-heading">
+                <span class="section-label">Explore Engineering</span>
+                <h2>Discover our departments.</h2>
+                <p>
+                    Choose a branch to explore its learning areas,
+                    practical concepts and general career information.
+                </p>
+            </div>
+
+            <div class="departments-grid">
+
+                <!-- CSE -->
+                <article class="department-card">
+                    <div class="department-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85"
+                            alt="Computer hardware and circuit board"
+                            loading="lazy">
+                        <span class="department-tag">CSE</span>
+                    </div>
+
+                    <div class="department-content">
+                        <h3>Computer Science &amp; Engineering</h3>
+                        <p>
+                            Explore programming, databases, networking,
+                            web development and computer systems.
+                        </p>
+                        <a class="department-link" href="cse.html">
+                            Explore CSE <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ELECTRICAL -->
+                <article class="department-card">
+                    <div class="department-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=85"
+                            alt="Electrical power transmission lines"
+                            loading="lazy">
+                        <span class="department-tag">EE</span>
+                    </div>
+
+                    <div class="department-content">
+                        <h3>Electrical Engineering</h3>
+                        <p>
+                            Discover electrical circuits, machines,
+                            power systems and measurement fundamentals.
+                        </p>
+                        <a class="department-link" href="electrical.html">
+                            Explore Electrical <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- MECHANICAL -->
+                <article class="department-card">
+                    <div class="department-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=85"
+                            alt="Industrial machinery"
+                            loading="lazy">
+                        <span class="department-tag">ME</span>
+                    </div>
+
+                    <div class="department-content">
+                        <h3>Mechanical Engineering</h3>
+                        <p>
+                            Learn about machines, manufacturing,
+                            engineering materials and mechanical systems.
+                        </p>
+                        <a class="department-link" href="mechanical.html">
+                            Explore Mechanical <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ECE -->
+                <article class="department-card">
+                    <div class="department-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85"
+                            alt="Electronics circuit board"
+                            loading="lazy">
+                        <span class="department-tag">ECE</span>
+                    </div>
+
+                    <div class="department-content">
+                        <h3>Electronics &amp; Communication</h3>
+                        <p>
+                            Explore electronic devices, digital systems,
+                            signals and communication technology.
+                        </p>
+                        <a class="department-link" href="ece.html">
+                            Explore ECE <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CIVIL -->
+                <article class="department-card">
+                    <div class="department-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=85"
+                            alt="Building construction site"
+                            loading="lazy">
+                        <span class="department-tag">CE</span>
+                    </div>
+
+                    <div class="department-content">
+                        <h3>Civil Engineering</h3>
+                        <p>
+                            Discover construction, surveying, building
+                            materials and infrastructure fundamentals.
+                        </p>
+                        <a class="department-link" href="civil.html">
+                            Explore Civil <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+<!-- WHY CHOOSE -->
+<section class="why-section">
+    <div class="why-content">
+        <span class="section-label">Learning &amp; Development</span>
+
+        <h2>Build knowledge beyond the classroom.</h2>
+
+        <p>
+            Engineering is about understanding how things work,
+            applying concepts carefully and continuing to develop
+            your technical skills.
+        </p>
+    </div>
+
+    <ul class="why-list">
+        <li>Explore branch-specific engineering topics.</li>
+        <li>Strengthen fundamentals through regular practice.</li>
+        <li>Develop technical communication and teamwork.</li>
+        <li>Learn about possible career and further-study pathways.</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="contact-box">
+        <div>
+            <span class="section-label">Stay Informed</span>
+            <h2>Looking for college information?</h2>
+            <p>
+                Refer to official college and JUT sources for verified
+                notices, admission updates and academic information.
+            </p>
+        </div>
+
+        <a class="btn btn-primary"
+           href="https://jutranchi.ac.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit JUT Website ↗
+        </a>
+    </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Government Polytechnic Ranchi</div>
+                <p class="footer-about">
+                    A student-friendly college website concept to explore
+                    engineering departments, general academic topics
+                    and technical learning areas.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#top">Home</a>
+                <a href="#about">About College</a>
+                <a href="#academics">Academics</a>
+                <a href="#departments">Departments</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Departments</h3>
+                <a href="cse.html">Computer Science</a>
+                <a href="electrical.html">Electrical</a>
+                <a href="mechanical.html">Mechanical</a>
+                <a href="ece.html">Electronics &amp; Communication</a>
+                <a href="civil.html">Civil</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="currentYear">2026</span> Government Polytechnic Ranchi</span>
+            <span>Technical Education · Jharkhand</span>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+});
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    });
+});
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>

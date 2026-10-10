@@ -1,0 +1,1152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#26352b">
+<title>Civil Engineering | Government Polytechnic Ranchi</title>
+<meta name="description" content="Explore Civil Engineering, structural design, construction technology, surveying and materials.">
+
+<style>
+:root {
+    --navy: #26352b;
+    --navy2: #354b3c;
+    --accent: #d18a42;
+    --accent-dark: #a96120;
+    --soft: #fff2e3;
+    --text: #26342c;
+    --muted: #727b73;
+    --bg: #f7f8f5;
+    --border: #e4e9e1;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    overflow-x: clip;
+}
+
+a { text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.container {
+    width: calc(100% - 64px);
+    max-width: 1160px;
+    margin-inline: auto;
+}
+
+/* TOP STRIP */
+
+.top-strip {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 5%;
+    color: #e0e8df;
+    background: #17231a;
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+
+.top-strip strong { color: white; }
+
+/* COLLEGE HEADER */
+
+.college-header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    width: 92%;
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.college-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.college-name h2 {
+    color: var(--navy);
+    font-size: clamp(18px, 2.2vw, 27px);
+    line-height: 1.35;
+}
+
+.college-name p {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+    background: var(--navy);
+    box-shadow: 0 6px 20px rgba(38,53,43,.12);
+}
+
+.nav-inner {
+    width: 90%;
+    max-width: 1160px;
+    min-height: 54px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-brand {
+    display: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px 0;
+    color: #e6ede5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-links a:hover { color: #ffd1a0; }
+
+.nav-badge {
+    padding: 7px 11px;
+    border: 1px solid rgba(239,181,119,.45);
+    border-radius: 8px;
+    color: #ffd1a0;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 40px;
+    border: 1px solid #566959;
+    border-radius: 9px;
+    color: white;
+    background: #354b3c;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 455px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    background:
+        url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=85")
+        center 50% / cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(22,35,25,.97) 0%,
+        rgba(22,35,25,.87) 42%,
+        rgba(22,35,25,.48) 72%,
+        rgba(22,35,25,.14) 100%
+    );
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 72px 0;
+}
+
+.eyebrow {
+    color: #ffd1a0;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 750px;
+    margin: 17px 0;
+    color: white;
+    font-size: clamp(38px, 5.5vw, 65px);
+    line-height: 1.08;
+    letter-spacing: -1.7px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #ffc184;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #e5e9e2;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 27px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 19px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: .25s;
+}
+
+.btn-primary {
+    color: #2c251d;
+    background: #ffc184;
+}
+
+.btn-primary:hover {
+    background: #ffdbb5;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    background: rgba(255,255,255,.05);
+}
+
+.btn-outline:hover { background: rgba(255,255,255,.13); }
+
+/* IMAGE HIGHLIGHTS */
+
+.highlights {
+    position: relative;
+    z-index: 2;
+    width: min(1080px, calc(100% - 64px));
+    margin: -28px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(38,53,43,.09);
+}
+
+.highlight { min-width: 0; background: white; }
+
+.highlight + .highlight {
+    border-left: 1px solid var(--border);
+}
+
+.highlight img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.highlight-content {
+    padding: 16px 10px 19px;
+    text-align: center;
+}
+
+.highlight-content strong {
+    display: block;
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.highlight-content span {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* SECTION HEADINGS */
+
+.section { padding-top: 72px; }
+
+.section-heading {
+    max-width: 820px;
+    margin: 0 auto 27px;
+}
+
+.section-label {
+    color: var(--accent-dark);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    color: var(--navy);
+    font-size: clamp(27px, 3.5vw, 39px);
+    line-height: 1.3;
+    letter-spacing: -.7px;
+}
+
+.section-heading p {
+    max-width: 720px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.about-image {
+    min-height: 320px;
+    overflow: hidden;
+    border-radius: 19px;
+    background: #e8ece5;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 29px;
+    border: 1px solid var(--border);
+    border-radius: 19px;
+    background: white;
+}
+
+.about-content h3 {
+    margin-bottom: 14px;
+    color: var(--navy);
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.about-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.about-content p + p { margin-top: 12px; }
+
+/* LEARNING CARDS */
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.learning-card {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    background: white;
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    border-color: #e8c49e;
+    box-shadow: 0 14px 32px rgba(38,53,43,.07);
+}
+
+.card-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 17px;
+    border-radius: 13px;
+    color: var(--accent-dark);
+    background: var(--soft);
+    font-size: 24px;
+}
+
+.learning-card h3 {
+    margin-bottom: 9px;
+    color: var(--navy);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+.learning-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
+    overflow-wrap: break-word;
+}
+
+/* CONSTRUCTION FEATURE */
+
+.lab-section {
+    margin-top: 72px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 35px;
+    border-radius: 23px;
+    color: white;
+    background: linear-gradient(125deg, #26352b, #405744);
+}
+
+.lab-image {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.lab-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lab-content .section-label { color: #ffd1a0; }
+
+.lab-content h2 {
+    margin: 12px 0;
+    color: white;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.3;
+}
+
+.lab-content p {
+    color: #e0e8df;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* CAREERS */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.career-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: white;
+}
+
+.career-card h3 {
+    margin-bottom: 17px;
+    color: var(--navy);
+    font-size: 20px;
+}
+
+.career-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
+.career-list li {
+    display: flex;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.career-list li::before {
+    content: "✓";
+    color: var(--accent-dark);
+    font-weight: 900;
+}
+
+/* CTA */
+
+.cta {
+    margin-top: 70px;
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    border: 1px solid #f0dfcc;
+    border-radius: 19px;
+    background: #fff4e8;
+}
+
+.cta h2 {
+    color: var(--navy);
+    font-size: clamp(22px, 3vw, 29px);
+    line-height: 1.35;
+}
+
+.cta p {
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 75px;
+    padding: 42px 0 20px;
+    color: #d7e0d7;
+    background: #17231a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr .8fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.footer-about {
+    max-width: 370px;
+    margin-top: 10px;
+    color: #b5c3b5;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.footer-col h3 {
+    margin-bottom: 13px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-col a {
+    display: block;
+    width: fit-content;
+    margin-top: 9px;
+    color: #c6d2c6;
+    font-size: 12px;
+}
+
+.footer-col a:hover { color: #ffc184; }
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    color: #aebdaf;
+    font-size: 11px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .learning-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lab-section {
+        padding: 28px;
+        gap: 24px;
+    }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+
+    .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .container { width: calc(100% - 32px); }
+
+    .top-strip {
+        padding: 8px 4%;
+        font-size: 9px;
+    }
+
+    .header-inner {
+        width: 92%;
+        padding: 12px 0;
+        gap: 11px;
+    }
+
+    .college-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .college-name h2 { font-size: 16px; }
+    .college-name p { font-size: 10px; }
+
+    .nav-inner {
+        width: 90%;
+        min-height: 56px;
+        flex-wrap: wrap;
+    }
+
+    .nav-brand { display: block; }
+
+    .menu-toggle {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .nav-badge { display: none; }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding-bottom: 8px;
+    }
+
+    .nav-links.open { display: flex; }
+
+    .nav-links li {
+        border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    .nav-links a { padding: 12px 5px; }
+
+    .hero {
+        min-height: 400px;
+        background-position: 58% center;
+    }
+
+    .hero-overlay { background: rgba(22,35,25,.81); }
+
+    .hero-inner {
+        width: 90%;
+        padding: 55px 0;
+    }
+
+    .hero h1 { font-size: clamp(36px, 10vw, 48px); }
+    .hero p { font-size: 13px; }
+
+    .highlights {
+        width: calc(100% - 32px);
+        margin-top: -20px;
+        grid-template-columns: 1fr;
+    }
+
+    .highlight {
+        display: grid;
+        grid-template-columns: 115px minmax(0, 1fr);
+        align-items: center;
+    }
+
+    .highlight + .highlight {
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .highlight img { height: 100px; }
+
+    .highlight-content {
+        padding: 12px;
+        text-align: left;
+    }
+
+    .section { padding-top: 48px; }
+    .section-heading h2 { font-size: 28px; }
+
+    .about-grid,
+    .career-grid,
+    .lab-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image,
+    .about-image img {
+        min-height: 0;
+        height: 240px;
+    }
+
+    .about-content,
+    .career-card { padding: 23px; }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .learning-card { padding: 22px; }
+
+    .lab-section {
+        margin-top: 48px;
+        padding: 22px;
+        gap: 22px;
+    }
+
+    .lab-image img { height: 225px; }
+
+    .cta {
+        margin-top: 50px;
+        padding: 25px 22px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 14px;
+    }
+
+    .footer-grid > :first-child { grid-column: 1 / -1; }
+
+    .footer-bottom {
+        flex-direction: column;
+        line-height: 1.8;
+    }
+
+    footer { margin-top: 55px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<div class="top-strip">
+    <span><strong>GOVERNMENT POLYTECHNIC RANCHI</strong></span>
+    <span>Technical Education · Jharkhand</span>
+</div>
+
+<header class="college-header">
+    <div class="header-inner">
+        <img class="college-logo" src="images1.jpeg"
+             alt="Government Polytechnic Ranchi logo">
+        <div class="college-name">
+            <h2>Government Polytechnic Ranchi</h2>
+            <p>Department of Technical Education, Jharkhand</p>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html">GPR · CIVIL</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                type="button" aria-expanded="false"
+                aria-controls="navLinks"
+                aria-label="Open navigation menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About College</a></li>
+            <li><a href="index.html#academics">Academics</a></li>
+            <li><a href="index.html#departments">Departments</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <span class="nav-badge">CIVIL ENGINEERING</span>
+    </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner">
+        <span class="eyebrow">Structures · Construction · Design</span>
+
+        <h1>
+            Civil
+            <span>Engineering.</span>
+        </h1>
+
+        <p>
+            Explore buildings, construction technology, surveying,
+            engineering materials and infrastructure. Build technical
+            knowledge through practical learning and problem-solving.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#learning" class="btn btn-primary">
+                Explore Learning Areas →
+            </a>
+            <a href="#about-department" class="btn btn-outline">
+                Discover the Branch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- THREE IMAGE HIGHLIGHTS -->
+<section class="highlights" aria-label="Civil engineering highlights">
+
+    <article class="highlight">
+        <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=500&q=80"
+            alt="Building construction site">
+        <div class="highlight-content">
+            <strong>Construction</strong>
+            <span>Understand building methods</span>
+        </div>
+    </article>
+
+    <article class="highlight">
+        <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80"
+            alt="Architectural and engineering design">
+        <div class="highlight-content">
+            <strong>Engineering Design</strong>
+            <span>Read plans and drawings</span>
+        </div>
+    </article>
+
+    <article class="highlight">
+        <img
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=500&q=80"
+            alt="Modern building architecture">
+        <div class="highlight-content">
+            <strong>Structures</strong>
+            <span>Explore the built environment</span>
+        </div>
+    </article>
+
+</section>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section class="section" id="about-department">
+    <div class="section-heading">
+        <span class="section-label">Discover the Department</span>
+        <h2>Designing the foundations of modern infrastructure.</h2>
+        <p>
+            Civil Engineering deals with the planning, design,
+            construction and maintenance of infrastructure such as
+            buildings, roads, bridges and water systems.
+        </p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                alt="Civil construction site and engineering work"
+                loading="lazy">
+        </div>
+
+        <article class="about-content">
+            <h3>About Civil Engineering</h3>
+
+            <p>
+                Civil Engineering applies scientific and engineering
+                principles to the built environment, including structures,
+                transportation, construction and water-related systems.
+            </p>
+
+            <p>
+                Students can develop their foundations through engineering
+                drawing, surveying, construction materials, building
+                technology and introductory structural concepts.
+            </p>
+
+            <p>
+                Practical activities help connect classroom knowledge with
+                measurements, site observations, drawings and construction
+                processes.
+            </p>
+        </article>
+    </div>
+</section>
+
+<!-- LEARNING AREAS -->
+<section class="section" id="learning">
+    <div class="section-heading">
+        <span class="section-label">Build Your Foundation</span>
+        <h2>Key learning areas.</h2>
+        <p>
+            Explore common Civil Engineering topics. Check the current
+            JUT syllabus for the exact subjects in your semester.
+        </p>
+    </div>
+
+    <div class="learning-grid">
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">▤</div>
+            <h3>Engineering Drawing</h3>
+            <p>
+                Learn drawing conventions, dimensions, building plans,
+                elevations, sections and technical representation.
+            </p>
+        </article>
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">⌖</div>
+            <h3>Surveying</h3>
+            <p>
+                Understand land measurements, levelling, surveying
+                instruments, field observations and mapping basics.
+            </p>
+        </article>
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">▥</div>
+            <h3>Construction Technology</h3>
+            <p>
+                Explore building components, construction methods,
+                site practices and the sequence of construction work.
+            </p>
+        </article>
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">◆</div>
+            <h3>Building Materials</h3>
+            <p>
+                Study the properties and uses of cement, concrete,
+                steel, bricks and other common construction materials.
+            </p>
+        </article>
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">⌂</div>
+            <h3>Structural Fundamentals</h3>
+            <p>
+                Develop introductory knowledge of loads, forces,
+                structural elements and the behaviour of structures.
+            </p>
+        </article>
+
+        <article class="learning-card">
+            <div class="card-icon" aria-hidden="true">≋</div>
+            <h3>Water & Transportation</h3>
+            <p>
+                Explore introductory concepts in water supply,
+                drainage, roads, transportation and public infrastructure.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- CONSTRUCTION FEATURE -->
+<section class="lab-section" id="practical">
+    <div class="lab-image">
+        <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+            alt="Construction work at an engineering site"
+            loading="lazy">
+    </div>
+
+    <div class="lab-content">
+        <span class="section-label">Learn by Doing</span>
+        <h2>From engineering drawings to real-world structures.</h2>
+
+        <p>
+            Practical learning can help students understand site
+            measurements, material properties, drawing interpretation,
+            construction sequences and quality observations.
+        </p>
+
+        <p style="margin-top:12px;">
+            Construction sites require suitable protective equipment,
+            proper supervision and compliance with safety procedures.
+        </p>
+    </div>
+</section>
+
+<!-- CAREERS -->
+<section class="section" id="careers">
+    <div class="section-heading">
+        <span class="section-label">Explore Opportunities</span>
+        <h2>Career pathways in Civil Engineering.</h2>
+        <p>
+            Opportunities depend on qualifications, practical experience,
+            skills and the requirements of each employer.
+        </p>
+    </div>
+
+    <div class="career-grid">
+        <article class="career-card">
+            <h3>Potential Career Areas</h3>
+            <ul class="career-list">
+                <li>Site Supervision Trainee</li>
+                <li>Surveying Assistant</li>
+                <li>Construction Quality Support</li>
+                <li>CAD Drafting Trainee</li>
+                <li>Building Materials Testing Support</li>
+                <li>Infrastructure Maintenance Support</li>
+            </ul>
+        </article>
+
+        <article class="career-card">
+            <h3>Skills to Develop</h3>
+            <ul class="career-list">
+                <li>Engineering drawing interpretation</li>
+                <li>Surveying and measurement basics</li>
+                <li>Construction material knowledge</li>
+                <li>Site safety awareness</li>
+                <li>CAD software fundamentals</li>
+                <li>Technical reporting and teamwork</li>
+            </ul>
+        </article>
+    </div>
+
+    <p style="margin-top:16px;color:#727b73;font-size:11px;line-height:1.8;">
+        Note: These are general educational examples, not a verified
+        list of college facilities, official syllabus subjects,
+        placements or job guarantees.
+    </p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div>
+        <h2>Build the infrastructure of tomorrow.</h2>
+        <p>Strengthen your fundamentals, observe carefully and keep learning.</p>
+    </div>
+
+    <a href="index.html#departments" class="btn btn-primary">
+        Explore Departments →
+    </a>
+</section>
+
+</div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Government Polytechnic Ranchi</div>
+                <p class="footer-about">
+                    Civil Engineering department page featuring general
+                    learning topics, construction concepts and career
+                    information.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About College</a>
+                <a href="index.html#academics">Academics</a>
+                <a href="index.html#departments">Departments</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore Civil</h3>
+                <a href="#about-department">About Department</a>
+                <a href="#learning">Learning Areas</a>
+                <a href="#practical">Practical Learning</a>
+                <a href="#careers">Career Pathways</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="currentYear">2026</span> Government Polytechnic Ranchi</span>
+            <span>Civil Engineering</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+});
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    });
+});
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
